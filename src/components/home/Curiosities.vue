@@ -7,7 +7,5 @@
 <style>
 .curiosities {
   height:400px;
-  background-color:cornsilk;
-  border: 1px solid gray;
 }
 </style>

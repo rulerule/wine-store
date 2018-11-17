@@ -12,7 +12,8 @@
 <style lang="scss">
 footer {
   height:250px;
-  background-color:Peru;
+  background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../../assets/dark-wood.jpg');
+  background-size:cover;
   text-align:center;
   .row {
     height:100%;

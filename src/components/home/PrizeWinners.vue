@@ -11,7 +11,5 @@
 <style>
 .prize-winners {
   height:300px;
-  background-color:BurlyWood;
-  border:1px solid gray;
 }
 </style>

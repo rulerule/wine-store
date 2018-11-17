@@ -30,5 +30,10 @@ export default {
 </script>
 
 <style lang="scss">
+.home-wrapper {
+  background-color:AntiqueWhite;
+  padding-bottom:25px;
+  box-sizing:border-box;
+}
 
 </style>

@@ -18,7 +18,7 @@
 .header {
   height:60px;
   line-height:60px;
-  background-color:Peru;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../assets/barrel.jpg');
   color:white;
   .logo {
     box-sizing:border-box;

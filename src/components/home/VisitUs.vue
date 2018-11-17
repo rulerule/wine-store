@@ -7,7 +7,5 @@
 <style>
 .visit-us {
   height:400px;
-  background-color:cornsilk;
-  border: 1px solid gray;
 }
 </style>

@@ -10,8 +10,6 @@
 <style>
 .wine-promotion {
   height:250px;
-  background-color:blanchedalmond;
-  border: 1px solid gray;
 }
 
 </style>
