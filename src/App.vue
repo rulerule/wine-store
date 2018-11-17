@@ -9,9 +9,9 @@
 
 <script>
 import './plugins/bootstrap-vue'
-import Header from '@/components/Header'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+import Header from '@/components/general/Header'
+import Navigation from '@/components/general/Navigation'
+import Footer from '@/components/general/Footer'
 export default {
   components: {
     'app-header': Header,

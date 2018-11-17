@@ -14,5 +14,8 @@ footer {
   height:250px;
   background-color:Peru;
   text-align:center;
+  .row {
+    height:100%;
+  }
 }
 </style>

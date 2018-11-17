@@ -1,68 +1,34 @@
 <template>
   <div class="container-fluid home-wrapper">
-    <div class="row">
-      <div class="col-sm-12 carrousel"> BIG ONE </div>
-    </div>
-    <div class="row">
-      <div class="wine-promotions col-xs-12 col-md-6 col-xl-3">4 3 2 1</div>
-      <div class="wine-promotions col-xs-12 col-md-6 col-xl-3">4 3 2 1</div>
-      <div class="wine-promotions col-xs-12 col-md-6 col-xl-3">4 3 2 1</div>
-      <div class="wine-promotions col-xs-12 col-md-6 col-xl-3">4 3 2 1</div>
-    </div>
-    <div class="row">
-      <div class="curiositys col-sm-12"> BIG ONE</div>
-    </div>
-    <div class="row">
-      <div class="prize-winners col-xs-12 col-md-6"> 1 2</div>
-      <div class="prize-winners col-xs-12 col-md-6"> 1 2</div>
-    </div>
-    <div class="row">
-      <div class="pictures col-xs-12 col-md-6 col-xl-3">4 3 2 1</div>
-      <div class="pictures col-xs-12 col-md-6 col-xl-3">4 3 2 1</div>
-      <div class="pictures col-xs-12 col-md-6 col-xl-3">4 3 2 1</div>
-      <div class="pictures col-xs-12 col-md-6 col-xl-3">4 3 2 1</div>
-    </div>
-    <div class="row">
-      <div class="visit-us col-sm-12"> BIG ONE</div>
-    </div>
+    <app-carrousel></app-carrousel>
+    <app-wine-promotions></app-wine-promotions>
+    <app-curiosities></app-curiosities>
+    <app-prize-winners></app-prize-winners>
+    <app-visit-us></app-visit-us>
+    <app-image-display></app-image-display>
   </div>
 </template>
 
 <script>
+import ImageDisplay from '@/components/home/ImageDisplay'
+import Carrousel from '@/components/home/Carrousel'
+import PrizeWinners from '@/components/home/PrizeWinners'
+import VisitUs from '@/components/home/VisitUs'
+import Curiosities from '@/components/home/Curiosities'
+import WinePromotions from '@/components/home/WinePromotions'
 export default {
-  name: 'home'
+  name: 'home',
+  components: {
+    'app-image-display': ImageDisplay,
+    'app-carrousel': Carrousel,
+    'app-prize-winners': PrizeWinners,
+    'app-visit-us': VisitUs,
+    'app-curiosities': Curiosities,
+    'app-wine-promotions': WinePromotions
+  }
 }
 </script>
 
 <style lang="scss">
-.carrousel {
-  height:400px;
-  background-color:cornsilk;
-  border: 1px solid gray;
-}
-.wine-promotions {
-  height:250px;
-  background-color:blanchedalmond;
-  border: 1px solid gray;
-}
-.curiositys {
-  height:400px;
-  background-color:cornsilk;
-  border: 1px solid gray;
-}
-.prize-winners {
-  height:300px;
-  background-color:BurlyWood;
-  border:1px solid gray;
-}
-.pictures {
-  height:250px;
-  background-color:blanchedalmond;
-  border: 1px solid gray;
-}
-.visit-us {
-  height:400px;
-  background-color:cornsilk;
-  border: 1px solid gray;
-}
+
 </style>
