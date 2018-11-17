@@ -1,29 +1,36 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <app-header></app-header>
+    <app-navigation></app-navigation>
     <router-view/>
+    <app-footer></app-footer>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import './plugins/bootstrap-vue'
+import Header from '@/components/Header'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
+export default {
+  components: {
+    'app-header': Header,
+    'app-navigation': Navigation,
+    'app-footer': Footer
   }
+}
+</script>
+
+<style lang="scss">
+html, body {
+  width:100%;
+  height:100%;
+}
+
+#app {
+  width:100%;
+  height:100%;
+  position:relative;
+  font-family: 'Lobster';
 }
 </style>
