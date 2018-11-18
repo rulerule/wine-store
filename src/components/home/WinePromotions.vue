@@ -1,15 +1,34 @@
 <template>
   <div class="row">
-    <div class="wine-promotion col-xs-12 col-md-6 col-xl-3">Wine Promotions</div>
-    <div class="wine-promotion col-xs-12 col-md-6 col-xl-3">Wine Promotions</div>
-    <div class="wine-promotion col-xs-12 col-md-6 col-xl-3">Wine Promotions</div>
-    <div class="wine-promotion col-xs-12 col-md-6 col-xl-3">Wine Promotions</div>
+    <wine-promotion
+      class="wine-promotion col-xs-12 col-md-6 col-xl-3"
+      v-for="wine in promotionList"
+      :key="wine.id"
+      :wine="wine">
+    </wine-promotion>
   </div>
 </template>
 
+<script>
+import WinePromotion from '@/components/home/WinePromotion'
+export default {
+  data () {
+    return {}
+  },
+  computed: {
+    promotionList () {
+      return this.$store.getters.listPromotionWines
+    }
+  },
+  components: {
+    'wine-promotion': WinePromotion
+  }
+}
+</script>
+
 <style>
 .wine-promotion {
-  height:250px;
+  height:350px;
 }
 
 </style>
